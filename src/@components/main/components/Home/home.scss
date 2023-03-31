@@ -1,0 +1,65 @@
+.home {
+    padding: 130px 10%;
+    color: white;
+    font-size: 1.5rem;
+    .search {
+        input[type=text] {
+            color: #fff;
+            background-color: #333;
+            font-family: "IBM Plex Sans", monospace, sans-serif;
+            position: relative;
+            padding: 10px 0px 10px 10px;
+            display: inline-block;              
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-sizing: border-box;
+            border: 2px solid #40FF4C;
+        }
+        input[type=text]:focus {
+            color: #000;
+            background-color: #ECF165;
+        }
+        .searchSugg {
+            z-index: 1;
+            width: 300px;
+            max-height: 400px;
+            overflow: auto;
+            color: #000;
+            background-color: #ECF165;
+            position: absolute;
+            padding: 0;
+            list-style-type: none;
+            .item {
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+                padding: 10px 20px;
+            }
+            .item:hover {
+                background-color: goldenrod;
+            }
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__description {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .home {
+        &__description {
+            text-align: center;
+            font-size: 1rem;
+            padding: 0;
+        }
+        padding: 130px 20%;
+    }
+}

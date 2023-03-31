@@ -1,0 +1,17 @@
+.prevention {
+    padding: 130px 20%;
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    &__title {
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .prevention {
+        padding: 130px 10%;
+        font-size: 1.3rem;
+    }
+}

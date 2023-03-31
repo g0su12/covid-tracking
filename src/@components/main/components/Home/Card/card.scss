@@ -1,0 +1,23 @@
+.card {
+    font-size: 1.5rem;
+    min-width: 400px;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 30px 0;
+    background-color: #222;  
+    border: 2px solid #1EFB2D;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.4s ease-in-out;
+        color: #1EFB2D;
+        cursor:grab;
+    }
+} 
+
+@media screen and (max-width: 1100px) {
+    .card {
+        font-size: 1.3rem;
+        min-width: 250px;
+        padding: 10px 0px;
+    }
+}
